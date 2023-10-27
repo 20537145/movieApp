@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap'
 function MovieCard({hello}) {
   return (
     <div>
-        <Card style={{  width: '18rem' }}>
+        <Card style={{   width: '18rem' }}>
       <Card.Img variant="top" src={hello.posterURL}  alt='' />
       <Card.Body>
         <Card.Title>{hello.title}</Card.Title>

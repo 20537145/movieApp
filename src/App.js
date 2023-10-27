@@ -38,10 +38,13 @@ function App() {
       rating:4
     }
   ])
+  const addMovie= (newMovie)=> {
+    setMovies((prevMovies)=> [...prevMovies, newMovie])
+  }
  const [search,setSearch]= useState('')
   return (
     <div className="App">
-    <FIlter setSearch={setSearch}/>
+    <FIlter setSearch={setSearch} addamovie={addMovie}/>
     <MovieList movies={movies} search={search}/>
     </div>
   );
